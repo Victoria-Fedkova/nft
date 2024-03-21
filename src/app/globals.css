@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-background: #181818;
+  --secondary-bg: #1e1e1e;
+  --accent: #dc3b5a;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--right-grotesk), sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--white);
+  background-color: var(--main-background);
+
+  position: relative;
+  overflow-x: hidden;
+}
