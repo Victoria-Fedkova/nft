@@ -49,6 +49,8 @@ module.exports = {
         "8xl": "32px",
         "9xl": "64px",
         "10xl": "36px",
+        "11xl": "60px",
+        "12xl": "120px",
       },
       lineHeight: {
         tini: "1",

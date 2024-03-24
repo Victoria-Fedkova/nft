@@ -1,13 +1,15 @@
 import Container from "./components/Container";
 import FAQItemsList from "./components/FAQItemList";
 import ImgSlider from "./components/ImgSlider";
-import InfinityString from "./components/InfinityString/InfinityString";
+import InfinityString from "./components/InfinityString";
 import MindMapGrid from "./components/MindMapGrid";
 import MindMapSlider from "./components/MindMapSlider";
+import StorySection from "./components/StorySection/StorySection";
 
 export default function Home() {
   return (
     <main className="">
+      <StorySection />
       <InfinityString />
       <section className="mt-[60px] md:mt-[80px] lg:mt-[120px]">
         <Container>

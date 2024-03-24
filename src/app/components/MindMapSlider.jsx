@@ -10,7 +10,7 @@ export default function MindMapSlider() {
   const settings = {
     arrows: false,
     dots: false,
-    infinity: true,
+    infinity: false,
     autoplay: true,
     // speed: 1000,
     slidesToShow: 1,
@@ -95,6 +95,22 @@ export default function MindMapSlider() {
             </h3>
           </div>
           <div className="absolute left-[0] right-[0] bottom-[-100%] opacity-0 group-hover:bottom-[0] group-hover:opacity-[1] flex flex-col justify-between min-h-[242px] lg:min-h-[480px] p-[24px] rounded-[24px] bg-[#DC3B5A] transition-all duration-250 ease-in">
+            <a className="cursor-pointer self-end">
+              <Image
+                className="object-contain"
+                src="/images/Vector.svg"
+                alt="arrow"
+                width={64}
+                height={64}
+              />
+            </a>
+            <h3 className="font-right-grotesk font-bold leading-[1em] text-8xl lg:text-9xl uppercase w-[60%]">
+              Learn more in mind map
+            </h3>
+          </div>
+        </div>
+        <div className="flex flex-col justify-between min-h-[242px] lg:min-h-[480px] p-[24px] rounded-[24px] bg-[#DC3B5A]">
+          <div className="flex flex-col justify-between ">
             <a className="cursor-pointer self-end">
               <Image
                 className="object-contain"

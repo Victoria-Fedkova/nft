@@ -1,0 +1,21 @@
+.elementBg {
+  background-image: url("/images/storyM1.png");
+  background-repeat: no-repeat;
+  background-size: 216px 292px;
+  background-position: bottom center;
+}
+
+@media (min-width: 768px) {
+  .elementBg {
+    background-image: url("/images/storyM2.png");
+    background-size: 313px 422px;
+    background-position: bottom right;
+  }
+}
+
+@media (min-width: 1280px) {
+  .elementBg {
+    background-size: 492px 662px;
+    background-image: url("/images/storyM3.png");
+  }
+}

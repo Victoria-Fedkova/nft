@@ -26,7 +26,7 @@ export default function ImgSlider() {
   const settings = {
     arrows: false,
     dots: false,
-    infinity: true,
+    infinity: false,
     autoplay: true,
     // speed: 1000,
     slidesToShow: 4,
