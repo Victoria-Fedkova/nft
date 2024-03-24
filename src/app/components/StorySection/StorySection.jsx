@@ -4,7 +4,7 @@ import { IoMdClose } from "react-icons/io";
 
 const StorySection = () => {
   return (
-    <>
+    <section id="about">
       <Container>
         <div
           className={`${css.elementBg} md:grid md:grid-cols-2 md:grid-flow-row mt-[60px] md:mt-[80px] lg:mt-[107px] md:pb-[60px] lg:pb-[82px] md:gap-y-[68px] lg:gap-y-[56px] pb-[332px] md:pb-0`}
@@ -19,7 +19,7 @@ const StorySection = () => {
           <p className="font-messinaSansMono font-regular text-2xl leading-tight lg:text-3xl uppercase text-right mb-[36px] md:mb-0">
             WHO GOT <br className="md:hidden" /> FED UP WITH BORING <br />
             AND HYPOCRITIC COMMONPLACE <br className="sm:hidden md:inline" />
-            THIS IS HOW THE IDEA OF <br />
+            THIS IS HOW THE IDEA OF <br className="sm:hidden md:inline" />
             ESCAPING AND DYNAMIC <br />
             JOURNEY ON THE <br className="sm:hidden md:inline" />
             YACHT
@@ -39,7 +39,7 @@ const StorySection = () => {
           </div>
         </div>
       </Container>
-    </>
+    </section>
   );
 };
 

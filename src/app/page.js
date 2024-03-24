@@ -13,7 +13,7 @@ export default function Home() {
       <HeroSection />
       <StorySection />
       <InfinityString />
-      <section className="mt-[60px] md:mt-[80px] lg:mt-[120px]">
+      <section id="m-map" className="mt-[60px] md:mt-[80px] lg:mt-[120px]">
         <Container>
           <h2 className="font-right-grotesk font-bold leading-tini text-4xl md:text-5xl lg:text-6xl uppercase text-center mb-[24px] md:mb-[40px] lg:mb-[80px]">
             MIND map
@@ -22,7 +22,7 @@ export default function Home() {
           <MindMapSlider />
         </Container>
       </section>
-      <section className="mt-[60px] md:mt-[80px] lg:mt-[120px]">
+      <section id="faq" className="mt-[60px] md:mt-[80px] lg:mt-[120px]">
         <Container>
           <h2 className="font-right-grotesk font-bold leading-tini text-4xl md:text-5xl lg:text-6xl uppercase text-center mb-[24px] md:mb-[40px] lg:mb-[80px]">
             FAQ
@@ -30,7 +30,7 @@ export default function Home() {
           <FAQItemsList />
         </Container>
       </section>
-      <section className="mt-[60px] md:mt-[80px] lg:mt-[120px]">
+      <section id="arts" className="mt-[60px] md:mt-[80px] lg:mt-[120px]">
         <Container>
           <h2 className="font-right-grotesk font-bold leading-tini text-4xl md:text-5xl lg:text-6xl uppercase text-center mb-[24px] md:mb-[40px] lg:mb-[80px]">
             COLLECTION

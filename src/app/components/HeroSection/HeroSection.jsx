@@ -1,5 +1,6 @@
 import Container from "../Container";
 import css from "./HeroSection.module.scss";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -21,10 +22,13 @@ const HeroSection = () => {
                 Apes aRe eveRywhere
               </h3>
             </div>
-            <div className="absolute md:left-[0] md:right-[0] lg:right-[124px] bottom-[-384px] md:bottom-[-90%] lg:bottom-[-50%] md:mr-0 flex items-center justify-center flex-col md:flex-col-reverse gap-[12px] md:gap-[16px] lg:gap-[28px] max-w-[216px] md:max-w-[397px] lg:max-w-[337px] mx-auto md:max-w-[190px]">
-              <button className="btn w-full  flex flex-row justify-center items-center h-[41px] lg:h-[70px] text-[#1E1E1E] hover:text-[white] text-[16px] lg:text-[29px] bg-[#1E1E1E1A] backdrop-blur-[6px] rounded-[8px] transition-all duration-250 ease-in">
+            <div className="absolute md:left-[0] md:right-[0] lg:right-[0] bottom-[-384px] md:bottom-[-90%] lg:bottom-[-50%] md:mr-0 flex items-center justify-center flex-col md:flex-col-reverse gap-[12px] md:gap-[16px] lg:gap-[28px] max-w-[216px]  lg:max-w-[337px] mx-auto md:max-w-[190px]">
+              <Link
+                href={"#mint"}
+                className="btn w-full  flex flex-row justify-center items-center h-[41px] lg:h-[70px] text-[#1E1E1E] hover:text-[white] text-[16px] lg:text-[29px] bg-[#1E1E1E1A] backdrop-blur-[6px] rounded-[8px] transition-all duration-250 ease-in"
+              >
                 MEET APES
-              </button>
+              </Link>
               <p
                 className={`${css.firstWord} font-messinaSansMono font-regular text-[12px] leading-tight lg:text-[16px] uppercase text-center md:text-justify`}
               >

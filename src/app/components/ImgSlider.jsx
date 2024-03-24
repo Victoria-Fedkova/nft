@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Image from "next/image";
 import { useRef, useState } from "react";
+import Container from "./Container";
 
 export default function ImgSlider() {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -86,7 +87,7 @@ export default function ImgSlider() {
   };
 
   return (
-    <div className="">
+    <Container>
       <Slider {...settings} ref={sliderRef}>
         {images.map((image, index) => (
           <div
@@ -121,6 +122,6 @@ export default function ImgSlider() {
           next
         </button>
       </div>
-    </div>
+    </Container>
   );
 }

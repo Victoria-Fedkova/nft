@@ -1,4 +1,5 @@
 import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
 import "./globals.css";
 import localFont from "next/font/local";
 export const metadata = {
@@ -42,10 +43,11 @@ const messinaSansMono = localFont({
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" style={{ scrollBehavior: "smooth" }}>
       <body
         className={`${messinaSansMono.variable}  ${biroScriptUSPlus.variable} ${rightGrotesk.variable}`}
       >
+        <Header />
         {children}
         <Footer />
       </body>
