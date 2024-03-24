@@ -1,5 +1,6 @@
 import Container from "./components/Container";
 import FAQItemsList from "./components/FAQItemList";
+import HeroSection from "./components/HeroSection/HeroSection";
 import ImgSlider from "./components/ImgSlider";
 import InfinityString from "./components/InfinityString";
 import MindMapGrid from "./components/MindMapGrid";
@@ -8,7 +9,8 @@ import StorySection from "./components/StorySection/StorySection";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="mt-[54px] lg:mt-[16px]">
+      <HeroSection />
       <StorySection />
       <InfinityString />
       <section className="mt-[60px] md:mt-[80px] lg:mt-[120px]">

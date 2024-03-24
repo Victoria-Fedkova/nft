@@ -1,0 +1,28 @@
+.elementBg {
+  background-image: url("/images/heroSM.png");
+  background-repeat: no-repeat;
+  background-size: 216px 284px;
+  background-position: center center;
+}
+
+@media (min-width: 768px) {
+  .elementBg {
+    background-image: url("/images/heroMD.png");
+    background-size: 283px 386px;
+    background-position: bottom right 53%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .elementBg {
+    background-size: 463px 612px;
+    background-image: url("/images/heroLG.png");
+    background-position: bottom right 52%;
+  }
+}
+
+.firstWord {
+  @media (min-width: 768px) {
+    text-indent: 40px;
+  }
+}

@@ -1,6 +1,13 @@
-const Container = function ({ children }) {
+import clsx from "clsx";
+
+const Container = function ({ children, isHero }) {
   return (
-    <div className="max-w-[360px] md:max-w-[768px] lg:max-w-[1280px] mx-auto px-[72px] md:px-[88px] lg:px-[124px]">
+    <div
+      className={clsx(
+        "max-w-[216px] md:max-w-[592px] lg:max-w-[1280px] mx-auto ",
+        isHero && " relative "
+      )}
+    >
       {children}
     </div>
   );
