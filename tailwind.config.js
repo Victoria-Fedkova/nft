@@ -7,11 +7,14 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: "480px",
+      sm: "360px",
       md: "768px",
-      lg: "1200px",
+      lg: "1280px",
     },
     extend: {
+      transitionProperty: {
+        height: "height",
+      },
       fontFamily: {
         rightGrotesk: ["var(--right-grotesk)", "sans-serif"],
         messinaSansMono: ["var(--messina-sans-mono)", "sans-serif"],
@@ -33,6 +36,7 @@ module.exports = {
       },
       colors: {
         customWhite: "#ffffff",
+        secondary: "#1E1E1E",
       },
       fontSize: {
         "1xl": "12px",
@@ -41,6 +45,10 @@ module.exports = {
         "4xl": "40px",
         "5xl": "80px",
         "6xl": "160px",
+        "7xl": "20px",
+        "8xl": "32px",
+        "9xl": "64px",
+        "10xl": "36px",
       },
       lineHeight: {
         tini: "1",
