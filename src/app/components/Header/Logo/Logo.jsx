@@ -1,9 +1,17 @@
 import Link from "next/link";
 import Somelogo from "../../../../../public/images/mainLogo.svg";
+import clsx from "clsx";
 
-const Logo = () => {
+const Logo = ({ isOpen }) => {
   return (
-    <div className="flex group hover:text-[white] w-[48px] h-[32px] lg:w-[72px] lg:h-[50px]">
+    <div
+      className={clsx(
+        "relative z-[1000] flex group w-[48px] h-[32px] lg:w-[72px] lg:h-[50px]",
+        isOpen
+          ? "text-[white] md:text-[#1e1e1e] hover:text-[#DC3B5A] md:hover:text-[white]"
+          : "hover:text-[white]"
+      )}
+    >
       <Link
         href={"/"}
         scroll={false}

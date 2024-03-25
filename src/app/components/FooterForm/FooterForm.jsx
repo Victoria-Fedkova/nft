@@ -42,7 +42,7 @@ const FooterForm = () => {
     >
       <div>
         <div className="flex justify-center items-center">
-          <div className="block  w-[48px] h-[48px] lg:w-[64px] lg:h-[64px] rounded-l-[8px] !bg-[#1E1E1E] bg-[url('/images/discord_logo.svg')] bg-no-repeat bg-center"></div>
+          <div className="block  w-[48px] h-[48px] lg:w-[64px] lg:h-[64px] rounded-l-[8px] !bg-[#1E1E1E] bg-[url('/images/discord_logo.svg')] bg-[length:16px_16px] lg:bg-[length:24px_124px] bg-no-repeat bg-center"></div>
           <input
             className={clsx(
               "border-solid border-[1px] h-[48px] lg:h-[64px] py-[17px] px-[24px] rounded-r-[8px] w-full bg-transparent font-messinaSansMono font-regular text-[12px] lg:text-[16px] !focus:bg-transparent focus:outline-none placeholder:text-[12px] lg:placeholder:text-[16px] uppercase",
@@ -65,7 +65,7 @@ const FooterForm = () => {
 
       <div>
         <div className="flex justify-center items-center">
-          <div className="block  w-[48px] h-[48px] lg:w-[64px] lg:h-[64px] rounded-l-[8px] bg-[#1E1E1E] bg-[url('/images/fox.svg')] bg-no-repeat bg-center"></div>
+          <div className="block  w-[48px] h-[48px] lg:w-[64px] lg:h-[64px] rounded-l-[8px] bg-[#1E1E1E] bg-[url('/images/fox.svg')] bg-[length:16px_16px] lg:bg-[length:24px_124px] bg-no-repeat bg-center"></div>
           <input
             className={clsx(
               "border-solid border-[1px] h-[48px] lg:h-[64px] py-[17px] px-[24px] rounded-r-[8px] w-full bg-transparent font-messinaSansMono font-regular text-[12px] lg:text-[16px] !focus:bg-transparent focus:outline-none placeholder:text-[12px] lg:placeholder:text-[16px] uppercase",

@@ -24,7 +24,7 @@ const Footer = () => {
           </p>
         </div>
         <FooterForm />
-        <p className="font-messinaSansMono font-regular text-1xl leading-tight lg:text-2xl uppercase text-center mt-[60px] md:mt-[80px] lg:mt-[120px]">
+        <p className="font-messinaSansMono font-regular text-1xl leading-tight lg:text-2xl uppercase text-center mt-[60px] md:mt-[80px] lg:mt-[120px] mb-[424px] md:mb-[40px]">
           © Yacht ape 2024 all rights reserved
         </p>
       </Container>
