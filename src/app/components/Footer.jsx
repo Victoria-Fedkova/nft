@@ -1,7 +1,7 @@
 import Container from "./Container";
 
 import { IoMdClose } from "react-icons/io";
-import FooterForm from "./FooterForm/FooterForm";
+import FooterForm from "./FooterForm";
 
 const Footer = () => {
   return (

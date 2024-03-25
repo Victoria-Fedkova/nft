@@ -10,9 +10,12 @@ const StorySection = () => {
           className={`${css.elementBg} md:grid md:grid-cols-2 md:grid-flow-row mt-[60px] md:mt-[80px] lg:mt-[107px] md:pb-[60px] lg:pb-[82px] md:gap-y-[68px] lg:gap-y-[56px] pb-[332px] md:pb-0`}
         >
           <h2 className="font-right-grotesk font-[900] text-balance md:leading-[60px] lg:leading-[120px] text-4xl md:text-11xl lg:text-12xl uppercase text-left mb-[16px] md:mb-0">
-            a Story that started with
+            a Story that <br className="md:hidden" />
+            started
+            <br className="md:hidden" /> with
             <span className="ml-[3px] text-[#DC3B5A] lg:tracking-[-3px]">
-              one simple <br className="md:hidden" />
+              one
+              <br className="md:hidden" /> simple <br className="md:hidden" />
               ape
             </span>
           </h2>

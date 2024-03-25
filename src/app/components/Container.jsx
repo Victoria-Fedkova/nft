@@ -4,7 +4,7 @@ const Container = function ({ children, isHero }) {
   return (
     <div
       className={clsx(
-        "max-w-[216px] md:max-w-[592px] lg:max-w-[1032px] mx-auto ",
+        "min-w-[216px] max-w-[480px] px-[72px] md:px-0 md:max-w-[592px] lg:max-w-[1032px] mx-auto ",
         isHero && " relative "
       )}
     >

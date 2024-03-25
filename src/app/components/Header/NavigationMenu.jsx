@@ -21,7 +21,7 @@ const NavigationMenu = ({ isOpen, setIsOpen }) => {
             "flex md:flex-row md:static",
             "",
             isOpen
-              ? "absolute md:static z-[2] flex-col gap-[16px] md:gap-[0] text-[24px] md:text-[12px] lg:text-[16px] justify-center items-center top-[-20px] left-[0px] right-[0px] bottom-[0px]  w-[344px] md:w-auto h-[100vh] md:h-[48px] lg:h-[80px] z-10 bg-[#181818] md:bg-transparent "
+              ? "absolute md:static z-[2] flex-col gap-[16px] md:gap-[0] text-[24px] md:text-[12px] lg:text-[16px] justify-center items-center top-[-20px] left-[0px] right-[0px] bottom-[0px]  w-[480px] md:w-auto h-[100vh] md:h-[48px] lg:h-[80px] z-10 bg-[#181818] md:bg-transparent "
               : "static flex-row bg-transparent"
           )}
         >

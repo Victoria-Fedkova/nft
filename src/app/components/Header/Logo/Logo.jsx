@@ -2,7 +2,7 @@ import Link from "next/link";
 import Somelogo from "../../../../../public/images/mainLogo.svg";
 import clsx from "clsx";
 
-const Logo = ({ isOpen }) => {
+const Logo = ({ isOpen, setIsOpen }) => {
   return (
     <div
       className={clsx(

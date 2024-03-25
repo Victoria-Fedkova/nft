@@ -34,15 +34,26 @@ export default function MindMapSlider() {
   return (
     <div className="block md:hidden">
       <Slider {...settings} ref={sliderRef}>
-        <div className="group relative overflow-hidden flex min-h-[242px] lg:min-h-[480px] p-[24px] rounded-[24px] bg-[#1E1E1E]">
-          <div className="flex flex-col justify-between">
-            <p className="font-messinaSansMono font-regular text-1xl leading-tight lg:text-3xl uppercase w-1/2 self-end">
-              All owners of APE NFTs and all future collections will receive a
-              percentage of sales based on the number of NFTs they own
-            </p>
-            <h3 className="font-right-grotesk font-bold leading-[1em] text-8xl lg:text-9xl uppercase">
-              YAPE DROP
-            </h3>
+        <div
+          className="group relative overflow-hidden flex min-h-[242px] lg:min-h-[480px] p-[24px] rounded-[24px] bg-[#1E1E1E]"
+          style={{ display: "flex !important", flexGrow: "1" }}
+        >
+          <div
+            className="flex flex-grow"
+            style={{ display: "flex !important", flexGrow: "1" }}
+          >
+            <div
+              className="flex flex-col justify-between flex-grow my-auto"
+              style={{ display: "flex !important", flexGrow: "1" }}
+            >
+              <p className="font-messinaSansMono font-regular text-1xl leading-tight lg:text-3xl uppercase w-1/2 self-end">
+                All owners of APE NFTs and all future collections will receive a
+                percentage of sales based on the number of NFTs they own
+              </p>
+              <h3 className="flex font-right-grotesk font-bold leading-[2em] text-8xl lg:text-9xl uppercase">
+                YAPE DROP
+              </h3>
+            </div>
           </div>
           <div className="absolute left-[0] right-[0] bottom-[-100%] opacity-0 group-hover:bottom-[0] group-hover:opacity-[1] flex flex-col justify-between min-h-[242px] lg:min-h-[480px] p-[24px] rounded-[24px] bg-[#DC3B5A] transition-all duration-250 ease-in">
             <a className="cursor-pointer self-end">

@@ -90,19 +90,19 @@ export default function ImgSlider() {
   };
 
   return (
-    <Container>
+    <>
       <Slider {...settings} ref={sliderRef}>
         {images.map((image, index) => (
           <div
             key={index}
-            className="w-[216px] h-[256px] md:w-[284px] md:h-[336px] lg:w-[240px] lg:h-[280px] rounded-[24px] overflow-hidden"
+            className="w-full h-auto md:w-[284px] lg:w-[240px] rounded-[24px] overflow-hidden "
           >
             <Image
-              className="object-cover w-[216px] h-[256px] md:w-[284px] md:h-[336px] lg:w-[240px] lg:h-[280px] rounded-[24px] overflow-hidden"
+              className="mx-auto object-cover w-full h-auto md:w-[284px] lg:w-[240px] rounded-[24px] overflow-hidden"
               src={image}
               alt={`Slide ${index}`}
-              width={240}
-              height={280}
+              width={340}
+              height={403}
             />
           </div>
         ))}
@@ -127,6 +127,6 @@ export default function ImgSlider() {
           next
         </button>
       </div>
-    </Container>
+    </>
   );
 }
