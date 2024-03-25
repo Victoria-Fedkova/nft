@@ -6,12 +6,12 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 
 export default function MindMapSlider() {
-  const [currentSlide, setCurrentSlide] = useState(1);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const settings = {
     arrows: false,
     dots: false,
-    infinity: false,
-    autoplay: true,
+    infinite: false,
+    autoplay: false,
     // speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -110,20 +110,20 @@ export default function MindMapSlider() {
           </div>
         </div>
         <div className="flex flex-col justify-between min-h-[242px] lg:min-h-[480px] p-[24px] rounded-[24px] bg-[#DC3B5A]">
-          <div className="flex flex-col justify-between ">
-            <a className="cursor-pointer self-end">
+          <a className="cursor-pointer ">
+            <div className="flex flex-col justify-between ">
               <Image
-                className="object-contain"
+                className="object-contain self-end"
                 src="/images/Vector.svg"
                 alt="arrow"
                 width={64}
                 height={64}
               />
-            </a>
-            <h3 className="font-right-grotesk font-bold leading-[1em] text-8xl lg:text-9xl uppercase w-[60%]">
-              Learn more in mind map
-            </h3>
-          </div>
+              <h3 className="font-right-grotesk font-bold leading-[1em] text-8xl lg:text-9xl uppercase w-[60%]">
+                Learn more in mind map
+              </h3>
+            </div>
+          </a>
         </div>
       </Slider>
 
@@ -132,6 +132,7 @@ export default function MindMapSlider() {
           type="button"
           className="font-biroScriptUSPlus font-regular leading-tight text-3xl"
           onClick={handlePrev}
+          disabled={currentSlide === 0}
         >
           prev
         </button>
@@ -140,6 +141,7 @@ export default function MindMapSlider() {
           type="button"
           className="font-biroScriptUSPlus font-regular leading-tight text-3xl"
           onClick={handleNext}
+          disabled={currentSlide === 4}
         >
           next
         </button>

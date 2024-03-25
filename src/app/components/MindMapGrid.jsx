@@ -81,18 +81,20 @@ const MindMapGrid = () => {
       </div>
 
       <div className="flex flex-col justify-between min-h-[242px] lg:min-h-[480px] p-[24px] rounded-[24px] bg-[#DC3B5A]">
-        <a className="cursor-pointer self-end">
-          <Image
-            className="object-contain"
-            src="/images/Vector.svg"
-            alt="arrow"
-            width={64}
-            height={64}
-          />
+        <a className="flex cursor-pointer flex-grow">
+          <div className="flex flex-col justify-between flex-grow">
+            <Image
+              className="object-contain self-end"
+              src="/images/Vector.svg"
+              alt="arrow"
+              width={64}
+              height={64}
+            />
+            <h3 className="font-right-grotesk font-bold leading-[1em] text-8xl lg:text-9xl uppercase w-[60%]">
+              Learn more in mind map
+            </h3>
+          </div>
         </a>
-        <h3 className="font-right-grotesk font-bold leading-[1em] text-8xl lg:text-9xl uppercase w-[60%]">
-          Learn more in mind map
-        </h3>
       </div>
     </div>
   );

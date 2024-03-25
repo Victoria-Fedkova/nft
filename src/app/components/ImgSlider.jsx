@@ -7,7 +7,7 @@ import { useRef, useState } from "react";
 import Container from "./Container";
 
 export default function ImgSlider() {
-  const [currentSlide, setCurrentSlide] = useState(1);
+  const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
     "/images/slide-1.jpg",
     "/images/slide-01.jpg",
@@ -27,14 +27,13 @@ export default function ImgSlider() {
   const settings = {
     arrows: false,
     dots: false,
-    infinity: false,
-    autoplay: true,
-    // speed: 1000,
+    infinite: false,
+    autoplay: false,
     slidesToShow: 4,
     slidesToScroll: 1,
 
     beforeChange: (_, newIndex) => {
-      setCurrentSlide(newIndex + 1);
+      setCurrentSlide(newIndex);
     },
 
     responsive: [
@@ -79,11 +78,15 @@ export default function ImgSlider() {
   const sliderRef = useRef();
 
   const handleNext = () => {
-    sliderRef.current.slickNext();
+    if (currentSlide < images.length - 1) {
+      sliderRef.current.slickNext();
+    }
   };
 
   const handlePrev = () => {
-    sliderRef.current.slickPrev();
+    if (currentSlide > 0) {
+      sliderRef.current.slickPrev();
+    }
   };
 
   return (
@@ -105,19 +108,21 @@ export default function ImgSlider() {
         ))}
       </Slider>
 
-      <div className="flex items-center justify-center gap-[48px] mt-[24px] lg:mt-[48px]">
+      <div className="flex items-center justify-center gap-[48px] mt-[24px] lg:mt-[48px] disabled:text-secondary">
         <button
           type="button"
           className="font-biroScriptUSPlus font-regular leading-tight text-3xl"
           onClick={handlePrev}
+          disabled={currentSlide === 0}
         >
           prev
         </button>
 
         <button
           type="button"
-          className="font-biroScriptUSPlus font-regular leading-tight text-3xl"
+          className="font-biroScriptUSPlus font-regular leading-tight text-3xl disabled:text-secondary"
           onClick={handleNext}
+          disabled={currentSlide === images.length - 1}
         >
           next
         </button>

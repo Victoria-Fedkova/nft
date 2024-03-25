@@ -5,10 +5,10 @@ import Link from "next/link";
 const HeroSection = () => {
   return (
     <div
-      className={`${css.elementBg} relative flex flex-col text-[#1E1E1E] max-w-[344px] md:max-w-[736px] lg:max-w-[1408px] mx-auto rounded-[24px] bg-[#DC3B5A]   pt-[8px] md:pt-[12px] lg:pt-[24px] pb-[19px] md:pb-[35px] lg:pb-[81px] min-h-[546px] md:min-h-[421px] lg:min-h-[720px]`}
+      className={`${css.elementBg} relative flex flex-col text-[#1E1E1E] max-w-[344px] md:max-w-[736px] lg:max-w-[1408px] mx-auto rounded-[24px] bg-[#DC3B5A] pt-[8px] md:pt-[12px] lg:pt-[24px] pb-[19px] md:pb-[35px] lg:pb-[81px] min-h-[546px] md:min-h-[421px] lg:min-h-[720px]`}
     >
       <div className={`flex flex-col justify-between md:justify-end flex-grow`}>
-        <div className=" mt-[28px] md:mt-0 md:mb-[115px] lg:mb-[145px]">
+        <div className="mt-[28px] md:mt-0 md:mb-[115px] lg:mb-[145px]">
           <Container isHero>
             <div className="lg:max-w-[1019px] mx-auto ">
               <h3 className="font-biroScriptUSPlus font-regular leading-tight text-2xl md:text-7xl lg:text-3xl text-center md:text-left">
