@@ -88,7 +88,9 @@ const NavigationMenu = ({ isOpen, setIsOpen }) => {
             )}
           >
             <Link
-              className="transition-all duration-250 easy-in group-hover:text-[white] group-hover:underline"
+              className={clsx(
+                "transition-all duration-250 easy-in group-hover:text-[white] group-hover:underline"
+              )}
               href={"#mint"}
               onClick={() => setIsOpen(false)}
             >
@@ -110,8 +112,8 @@ const NavigationMenu = ({ isOpen, setIsOpen }) => {
             "relative z-[999] flex justify-center items-center w-[48px] lg:w-[80px] h-[48px] lg:h-[80px] bg-[#1E1E1E1A]  mb-[8px] lg:mb-[16px] rounded-r-[8px] md:rounded-r-[12px]",
             isOpen
               ? "bg-[#FFFFFF1A] md:bg-[#1E1E1E1A] rounded-l-[8px] md:rounded-l-[0] hover:text-[#DC3B5A] md:hover:text-[white]"
-              : " rounded-l-[8px] md:rounded-l-[12px] bg-[#1E1E1E1A] hover:text-[white]",
-            "transition-all duration-250 easy-in  hover:text-[white] hover:underline"
+              : " rounded-l-[8px] md:rounded-l-[12px] bg-[#1E1E1E1A] hover:text-[white] text-[#1E1E1E]",
+            "transition-all duration-250 easy-in hover:underline"
           )}
           onClick={() => setIsOpen()}
         >

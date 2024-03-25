@@ -21,8 +21,11 @@ const StorySection = () => {
           </h2>
           <p className="font-messinaSansMono font-regular text-2xl leading-tight lg:text-3xl uppercase text-right mb-[36px] md:mb-0">
             WHO GOT <br className="md:hidden" /> FED UP WITH BORING <br />
-            AND HYPOCRITIC COMMONPLACE <br className="sm:hidden md:inline" />
-            THIS IS HOW THE IDEA OF <br className="sm:hidden md:inline" />
+            AND HYPOCRITIC
+            <br className="md:hidden" /> COMMONPLACE
+            <br className="sm:hidden md:inline" />
+            THIS IS <br className="md:hidden" /> HOW THE IDEA OF
+            <br className=" lg:hidden" />
             ESCAPING AND DYNAMIC <br />
             JOURNEY ON THE <br className="sm:hidden md:inline" />
             YACHT

@@ -22,7 +22,7 @@ const HeroSection = () => {
                 Apes aRe eveRywhere
               </h3>
             </div>
-            <div className="absolute  md:right-[0px] lg:right-[0px] bottom-[-369px] md:bottom-[-90%] lg:bottom-[-50%] ml-auto md:mr-0 flex items-center justify-center flex-col md:flex-col-reverse gap-[12px] md:gap-[16px] lg:gap-[28px] max-w-[340px] md:max-w-[190px] lg:max-w-[337px] ">
+            <div className="absolute  md:right-[0px] lg:right-[0px] bottom-[-369px] md:bottom-[-90%] lg:bottom-[-50%]  md:mr-0 flex items-center justify-center flex-col md:flex-col-reverse gap-[12px] md:gap-[16px] lg:gap-[28px] max-w-[340px] md:max-w-[190px] lg:max-w-[337px]  left-1/2 transform -translate-x-1/2 md:left-auto md:translate-x-[0]">
               <Link
                 href={"#mint"}
                 className="btn w-full  flex flex-row justify-center items-center h-[41px] lg:h-[70px] text-[#1E1E1E] hover:text-[white] text-[16px] lg:text-[29px] bg-[#1E1E1E1A] backdrop-blur-[6px] rounded-[8px] transition-all duration-250 ease-in"

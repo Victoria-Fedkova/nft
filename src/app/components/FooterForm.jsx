@@ -35,7 +35,7 @@ const FooterForm = () => {
 
   return (
     <form
-      className={` flex flex-col gap-[16px] lg:gap-[24px] w-full lg:max-w-[397px] mx-auto `}
+      className={` flex flex-col gap-[16px] lg:gap-[24px] max-w-[340px] lg:max-w-[397px] mx-auto `}
       onSubmit={handleSubmit(async (data) => {
         handleSubmitForm(data);
       })}
